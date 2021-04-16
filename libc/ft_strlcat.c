@@ -1,5 +1,7 @@
 #include <string.h>
 
+// нужно сделать подсчет независимо от сайз_т
+
 size_t ft_strlcat(char *dest, const char *cpy, size_t n)
 {
 	int i, destcount;
@@ -8,11 +10,13 @@ size_t ft_strlcat(char *dest, const char *cpy, size_t n)
     destcount = 0;
     while (dest[destcount] != '\0')
         destcount++;
-	while (cpy[i] != '\0' && n > i+1)
+	while (cpy[i] != '\0')
     {
-        dest[i+destcount] = cpy[i];
+        if (n > destcount+i+1)
+            dest[i+destcount] = cpy[i];
         i++;
+        dest[i+destcount] = '\0';
     }
     dest[i+destcount] = '\0';
-	return (i);
+	return (i+destcount);
 }

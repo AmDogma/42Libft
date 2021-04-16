@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
 	c[7] = '\0';
 	printf("%s\n", (unsigned char *)c);
 	ft_bzero(c, 8);
-	unsigned char mem[15] = "Hello there", cpy[15] = {};
+	unsigned char mem[20] = "some txt", cpy[15] = {};
 	//ft_memcpy(cpy, mem, 2);
 	//void *str = cpy;
 	//str = ft_memset(c, '3', 3);
@@ -28,7 +28,8 @@ int main(int argc, const char * argv[]) {
 	printf("%s|%s\n", mem, cpy);
 	//printf("%d", ft_memcmp(mem, cpy, 15));
 	//printf("%d\n", (int)ft_strlen((char *)mem));
-    ft_strlcpy((char *)cpy, "fejjfjf", 8);
-	printf("%s\n", cpy);
+    //printf("%lu %s", ft_strlcpy((char *)cpy, "fejjfjffdfdfd", 8), cpy);
+	//printf("%lu, %s\n",  ft_strlcat((char *)mem, "addsome", 12), mem);
+    
 	return 0;
 }
