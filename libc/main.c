@@ -9,7 +9,8 @@ void *ft_memove(void *dest, const void *cpy, size_t n);
 void *ft_memchr(void *dest, int ch, size_t n);
 int ft_memcmp(void *cmp1, const void *cmp2, size_t n);
 size_t ft_strlen(const char *str);
-char *ft_stlrcpy(char *dest, const char *cpy);
+size_t ft_strlcpy(char *dest, const char *cpy, size_t n);
+size_t ft_strlcat(char *dest, const char *cpy, size_t n);
 
 int main(int argc, const char * argv[]) {
 	// insert code here...
@@ -27,6 +28,7 @@ int main(int argc, const char * argv[]) {
 	printf("%s|%s\n", mem, cpy);
 	//printf("%d", ft_memcmp(mem, cpy, 15));
 	//printf("%d\n", (int)ft_strlen((char *)mem));
-	//printf("%s", ft_stlrcpy((char *)cpy, "fejjfjf"));
+    ft_strlcpy((char *)cpy, "fejjfjf", 8);
+	printf("%s\n", cpy);
 	return 0;
 }

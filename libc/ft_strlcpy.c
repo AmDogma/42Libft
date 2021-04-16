@@ -1,16 +1,15 @@
 #include <string.h>
 
-//1) нужна ли проверка на сущ dest 2) Нужно ли его создавать, если нет
-
-char *ft_stlrcpy(char *dest, const char *cpy)
+size_t ft_strlcpy(char *dest, const char *cpy, size_t n)
 {
 	int i;
 
 	i = 0;
-	while (cpy[i] != '\0')
+	while (cpy[i] != '\0' && n > i+1)
 	{
 		dest[i] = cpy[i];
 		i++;
 	}
-	return (dest);
+    dest[i] = '\0';
+	return (i);
 }
