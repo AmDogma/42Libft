@@ -11,6 +11,9 @@ int ft_memcmp(void *cmp1, const void *cmp2, size_t n);
 size_t ft_strlen(const char *str);
 size_t ft_strlcpy(char *dest, const char *cpy, size_t n);
 size_t ft_strlcat(char *dest, const char *cpy, size_t n);
+char *ft_strchr(const char *str, int n);
+char *ft_strrchr(const char *str, int n);
+char *ft_strnstr(const char *str1, const char *str2, size_t n);
 
 int main(int argc, const char * argv[]) {
 	// insert code here...
@@ -30,6 +33,8 @@ int main(int argc, const char * argv[]) {
 	//printf("%d\n", (int)ft_strlen((char *)mem));
     //printf("%lu %s", ft_strlcpy((char *)cpy, "fejjfjffdfdfd", 8), cpy);
 	//printf("%lu, %s\n",  ft_strlcat((char *)mem, "addsome", 12), mem);
-    
+    //printf("ft_strchr ... %s\n", ft_strchr((char *)mem, 't'));
+     //printf("ft_strRchr ... %s\n", ft_strrchr((char *)mem, 't'));
+    //printf("ft_strNstr ... |%s|\n", strnstr((char *)mem,"tx", 6));
 	return 0;
 }

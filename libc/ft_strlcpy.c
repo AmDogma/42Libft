@@ -1,7 +1,5 @@
 #include <string.h>
 
-// нужно сделать подсчет независимо от сайз_т
-
 size_t ft_strlcpy(char *dest, const char *cpy, size_t n)
 {
 	int i;
