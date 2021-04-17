@@ -13,7 +13,7 @@ int main() {
 	//ft_memccpy(cpy, mem, ' ', 20);
 	//ft_memove(mem+1, mem+3, 5);
 	//printf("%s\n", (char *)ft_memchr(mem, 't', 11));
-	printf("Begin test...%s %s\nAfter test...", mem, cpy);
+	printf("Begin test : %s %s\nAfter test : ", mem, cpy);
 	//printf("%d", ft_memcmp(mem, cpy, 15));
 	//printf("%d\n", (int)ft_strlen((char *)mem));
     //printf("%lu %s", ft_strlcpy((char *)cpy, "fejjfjffdfdfd", 8), cpy);
@@ -32,6 +32,7 @@ int main() {
 	//printf("To lower - %c\n", ft_tolower('3'));
 	//printf("%p\n", ft_calloc(4000000000, 56667));
 	//printf("%s\n", ft_strdup((char *)mem));
-	printf("%s", ft_substr((char *)mem, 10, 7));
+	//printf("%s", ft_substr((char *)mem, 18, 10));
+	printf("%s", ft_strjoin((char *)mem, (char *)mem));
 	return 0;
 }
