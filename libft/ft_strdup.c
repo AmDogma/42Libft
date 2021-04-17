@@ -3,9 +3,8 @@
 char *ft_strdup(const char *str)
 {
 	void *dest;
-	int i, num;
+	int num;
 
-	i = 0;
 	num = (int)ft_strlen(str)+1;
 	dest = (void *)malloc(num);
 	if (dest)

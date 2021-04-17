@@ -31,5 +31,6 @@ int ft_toupper(int ch);
 int ft_tolower(int ch);
 void *ft_calloc(size_t num, size_t size);
 char *ft_strdup(const char *str);
+char *ft_substr(char const *str, unsigned int start, size_t len);
 
 #endif
