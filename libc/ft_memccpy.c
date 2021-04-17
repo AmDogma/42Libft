@@ -1,5 +1,4 @@
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 // 1) нужна ли проверка на сущ dest 2) Нужно ли его создавать, если нет 
 

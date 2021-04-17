@@ -1,4 +1,4 @@
-#include <string.h>
+#include "libft.h"
 
 char *ft_strnstr(const char *str1, const char *str2, size_t n)
 {

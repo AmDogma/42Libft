@@ -1,5 +1,4 @@
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 //1)проверки, нужна ли dest например 2) передается через '1' судя по работе ориг функции 
 

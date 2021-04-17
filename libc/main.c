@@ -1,19 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-
-void *ft_memset(void *dest, int simb, size_t n);
-void ft_bzero(void *dest, size_t n);
-void *ft_memcpy(void *dest, const void *cpy, size_t n);
-void *ft_memccpy(void *dest, const void *cpy, int ch, size_t n);
-void *ft_memove(void *dest, const void *cpy, size_t n);
-void *ft_memchr(void *dest, int ch, size_t n);
-int ft_memcmp(void *cmp1, const void *cmp2, size_t n);
-size_t ft_strlen(const char *str);
-size_t ft_strlcpy(char *dest, const char *cpy, size_t n);
-size_t ft_strlcat(char *dest, const char *cpy, size_t n);
-char *ft_strchr(const char *str, int n);
-char *ft_strrchr(const char *str, int n);
-char *ft_strnstr(const char *str1, const char *str2, size_t n);
+#include "libft.h"
 
 int main(int argc, const char * argv[]) {
 	// insert code here...
@@ -36,5 +21,11 @@ int main(int argc, const char * argv[]) {
     //printf("ft_strchr ... %s\n", ft_strchr((char *)mem, 't'));
      //printf("ft_strRchr ... %s\n", ft_strrchr((char *)mem, 't'));
     //printf("ft_strNstr ... |%s|\n", strnstr((char *)mem,"tx", 6));
+    //printf("ft_strncmp... |%d|\n", ft_strncmp((char *)mem,"some txte", 17));
+	//printf("ATOI = %d", ft_atoi("21474836483"));
+	//printf("Is alpha - %d\n", ft_isalpha('@'));
+	//printf("Is digit - %d\n", ft_isdigit('9'));
+	//printf("Is alnum - %d\n", ft_isalnum('A'));
+	//printf("Is acsii - %d\n", ft_isascii(0));
 	return 0;
 }
