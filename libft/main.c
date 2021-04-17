@@ -1,19 +1,19 @@
 #include "libft.h"
 
-int main(int argc, const char * argv[]) {
+int main() {
 	// insert code here...
 	char c[8];
 	c[7] = '\0';
 	printf("%s\n", (unsigned char *)c);
 	ft_bzero(c, 8);
-	unsigned char mem[20] = "some txt", cpy[15] = {};
+	unsigned char mem[23] = "some txt here you see?", cpy[15] = {};
 	//ft_memcpy(cpy, mem, 2);
 	//void *str = cpy;
 	//str = ft_memset(c, '3', 3);
 	//ft_memccpy(cpy, mem, ' ', 20);
 	//ft_memove(mem+1, mem+3, 5);
 	//printf("%s\n", (char *)ft_memchr(mem, 't', 11));
-	printf("%s|%s\n", mem, cpy);
+	printf("Begin test data: \n%s|%s\nTest data:\n", mem, cpy);
 	//printf("%d", ft_memcmp(mem, cpy, 15));
 	//printf("%d\n", (int)ft_strlen((char *)mem));
     //printf("%lu %s", ft_strlcpy((char *)cpy, "fejjfjffdfdfd", 8), cpy);
@@ -27,5 +27,10 @@ int main(int argc, const char * argv[]) {
 	//printf("Is digit - %d\n", ft_isdigit('9'));
 	//printf("Is alnum - %d\n", ft_isalnum('A'));
 	//printf("Is acsii - %d\n", ft_isascii(0));
+	//printf("Is print - %d\n", ft_isprint(' '));
+	//printf("To upper - %c\n", ft_toupper('z'));
+	//printf("To lower - %c\n", ft_tolower('3'));
+	//printf("%p\n", ft_calloc(4000000000, 56667));
+	//printf("%s\n", ft_strdup((char *)mem));
 	return 0;
 }

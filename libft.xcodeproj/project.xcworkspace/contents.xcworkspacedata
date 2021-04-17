@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/mdewayne/Desktop/pool/libc/libc/libft.xcodeproj">
    </FileRef>
 </Workspace>

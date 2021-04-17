@@ -4,6 +4,8 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+
 
 void *ft_memset(void *dest, int simb, size_t n);
 void ft_bzero(void *dest, size_t n);
@@ -24,5 +26,10 @@ int ft_isalpha(int ch);
 int ft_isdigit(int ch);
 int ft_isalnum(int ch);
 int ft_isascii(int ch);
+int ft_isprint(int ch);
+int ft_toupper(int ch);
+int ft_tolower(int ch);
+void *ft_calloc(size_t num, size_t size);
+char *ft_strdup(const char *str);
 
 #endif

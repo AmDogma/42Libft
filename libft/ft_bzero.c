@@ -11,8 +11,7 @@ void ft_bzero(void *dest, size_t n)
 	{
 		while (n > i)
 		{
-			dubl[i] = '\0';
-			//printf("%i) %c \n", i, dubl[i]);
+			dubl[i] = 0;
 			i++;
 		}
 	}
