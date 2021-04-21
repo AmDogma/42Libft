@@ -1,13 +1,13 @@
 #include "libft.h"
 
-void ft_bzero(void *dest, size_t n)
+void	ft_bzero(void *dest, size_t n)
 {
-	int i;
-	unsigned char *dubl;
+	int				i;
+	unsigned char	*dubl;
 
 	i = 0;
 	dubl = (unsigned char *)dest;
-	if(dest)
+	if (dest)
 	{
 		while (n > i)
 		{
@@ -15,5 +15,4 @@ void ft_bzero(void *dest, size_t n)
 			i++;
 		}
 	}
-	return;
 }

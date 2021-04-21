@@ -1,29 +1,26 @@
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char *dest;
-	int num;
+	char	*dest;
+	int		num;
 
 	dest = ft_strdup(s1);
 	if (!dest)
 		return (dest);
-	num = (int)ft_strlen(s1)-1;
-	/*
-	 можно эту часть вынести в друг функцию
-	 */
+	num = (int)ft_strlen(s1) - 1;
 	while (*set != '\0')
 	{
 		if (dest[num] == *set)
 		{
 			dest[num--] = '\0';
-			continue;
+			continue ;
 		}
 		if (*dest == *set)
 		{
-			dest += 1; // dest++; или если сокращать ))) dest += 1 + num - num--;
+			dest += 1;
 			num--;
-			continue;
+			continue ;
 		}
 		set++;
 	}

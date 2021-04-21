@@ -1,8 +1,8 @@
 #include "libft.h"
 
-static int ft_nsize(int n)
+static int	ft_nsize(int n)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (n < 0)
@@ -15,13 +15,13 @@ static int ft_nsize(int n)
 	return (i);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int i;
-	char *dest;
+	int		i;
+	char	*dest;
 
 	i = ft_nsize(n);
-	dest = (char *)malloc(sizeof(char *)*(i+1));
+	dest = (char *)malloc(sizeof(char *) * (i + 1));
 	if (dest)
 	{
 		if (n < 0)
@@ -30,9 +30,9 @@ char *ft_itoa(int n)
 		while (n != 0)
 		{
 			if (n > 0)
-				dest[i] = n%10+48;
+				dest[i] = n % 10 + 48;
 			else
-				dest[i] = -(n%10)+48;
+				dest[i] = -(n % 10) + 48;
 			n /= 10;
 			i--;
 		}

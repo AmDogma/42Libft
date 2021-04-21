@@ -1,8 +1,8 @@
 #include "libft.h"
 
-static int ft_chsize(const char *str, char ch)
+static int	ft_chsize(const char *str, char ch)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != ch && str[i] != '\0')
@@ -10,31 +10,34 @@ static int ft_chsize(const char *str, char ch)
 	return (i);
 }
 
-static int ft_msize(const char *s, char c)
+static int	ft_msize(const char *s, char c)
 {
-	int add, i;
+	int	add;
+	int	i;
 
 	i = 0;
 	add = 0;
 	while (s[add] != '\0')
 	{
-		if ((s[add] == c && s[add+1] != c) || (s[add] != c && add == 0))
+		if ((s[add] == c && s[add + 1] != c) || (s[add] != c && add == 0))
 			i++;
 		add++;
 	}
 	return (i);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	int i, add;
-	char **temp;
+	int		i;
+	int		add;
+	char	**temp;
 
-	i = add = 0;
-	temp = (char **)malloc(sizeof(char *)*(ft_msize(s, c)+1));
+	i = 0;
+	add = 0;
+	temp = (char **)malloc(sizeof(char *) * (ft_msize(s, c) + 1));
 	while (s[i] != '\0' && temp)
 	{
-		if (s[i-1] == c || i == 0)
+		if (s[i - 1] == c || i == 0)
 		{
 			if (ft_chsize(s + i, c))
 				temp[add++] = ft_substr(s, i, ft_chsize(s + i, c));
