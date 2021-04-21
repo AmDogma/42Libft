@@ -1,12 +1,22 @@
 #include "libft.h"
 
+static char forstrmapi(unsigned int i, char c)
+{
+	if (c > 96 && c < 123 && i%2)
+		return(c-32);
+	else if (c > 64 && c < 91 && i%2)
+		return(c+32);
+	else
+		return (c);
+}
+
 int main() {
 	// insert code here...
 	char c[8];
 	c[7] = '\0';
 	printf("%s\n", (unsigned char *)c);
 	ft_bzero(c, 8);
-	unsigned char mem[25] = "2eeeseeee1", cpy[15] = {};
+	unsigned char mem[25] = "some text here you! see?", cpy[15] = {};
 	//ft_memcpy(cpy, mem, 2);
 	//void *str = cpy;
 	//str = ft_memset(c, '3', 3);
@@ -23,7 +33,7 @@ int main() {
      //printf("ft_strRchr ... %s\n", ft_strrchr((char *)mem, 't'));
     //printf("ft_strNstr ... |%s|\n", strnstr((char *)mem,"tx", 6));
     //printf("ft_strncmp... |%d|\n", ft_strncmp((char *)mem,"some txte", 17));
-	//printf("ATOI = %d", ft_atoi("21474836483"));
+	//printf("ATOI = %d", ft_atoi("   2148356483"));
 	//printf("Is alpha - %d\n", ft_isalpha('@'));
 	//printf("Is digit - %d\n", ft_isdigit('9'));
 	//printf("Is alnum - %d\n", ft_isalnum('A'));
@@ -36,14 +46,21 @@ int main() {
 	//printf("%s\n", ft_substr((char *)mem, 18, 10));
 	//printf("%s", ft_strjoin((char *)mem, (char *)mem));
 	//printf("%s", ft_strtrim("asadasdaaa", "ads"))
-	//* далее split
+	/* далее split
 	int		i = 0;
-	char **temp = ft_split((char *)mem, 'e');
+	char **temp = ft_split("111eee222eee1ee333", 'e');
 	while (temp[i])
 	{
-		printf("%s\n", temp[i]);
+		printf("SPLIT #%d %s\n", i, temp[i]);
 		i++;
 	}
-	//*/
+	конец сплит */
+	//printf("ITOA = %s\n", ft_itoa(2147483647));
+	//printf("STRMAPI %s\n", ft_strmapi("abrakadabra", &forstrmapi));
+	//ft_putchar_fd('!', 1);
+	//ft_putstr_fd("1231231231\n", 1);
+	//ft_putendl_fd("1231231231", 1);
+	//ft_putnbr_fd(12131231, 1);
+	
 	return 0;
 }

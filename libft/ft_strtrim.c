@@ -21,7 +21,7 @@ char *ft_strtrim(char const *s1, char const *set)
 		}
 		if (*dest == *set)
 		{
-			dest = dest+1; // dest++; или если сокращать ))) dest += 1 + num - num--;
+			dest += 1; // dest++; или если сокращать ))) dest += 1 + num - num--;
 			num--;
 			continue;
 		}
