@@ -18,19 +18,20 @@ int main() {
 	c[7] = '\0';
 	printf("%s\n", (unsigned char *)c);
 	ft_bzero(c, 8);
-	unsigned char mem[25] = "some text here you! see?", cpy[15] = {};
+	unsigned char mem[44] = "1111", cpy[44] = "1111"; //ome text here you! see?
 	//ft_memcpy(cpy, mem, 2);
 	//void *str = cpy;
 	//str = ft_memset(c, '3', 3);
-	//ft_memccpy(cpy, mem, ' ', 20);
+	//printf("%s\n", ft_memccpy(cpy, "zyxwvutsrqponmlkjihgfedcba", 'r', 20));
 	//printf("MEMMOVE = %s\n", ft_memmove(mem+5, mem+3, 2));
 	//printf("%s\n", (char *)ft_memchr(mem, 't', 11));
-	printf("Begin test : %s %s\nAfter test : ", mem, cpy);
+	printf("Begin test : %s|%s\nAfter test : ", mem, cpy);
 
 	//printf("%d", ft_memcmp(mem, cpy, 15));
 	//printf("%d\n", (int)ft_strlen((char *)mem));
     //printf("%lu %s", ft_strlcpy((char *)cpy, "fejjfjffdfdfd", 8), cpy);
-	//printf("%lu, %s\n",  ft_strlcat((char *)mem, "addsome", 12), mem);
+	printf("\nMY %lu, %s\n", ft_strlcat((char *)mem, "2222222", 3), mem);
+	printf("NO %lu, %s\n", strlcat((char *)cpy, "2222222", 3), cpy);
     //printf("ft_strchr ... %s\n", ft_strchr((char *)mem, 't'));
      //printf("ft_strRchr ... %s\n", ft_strrchr((char *)mem, 't'));
     //printf("ft_strNstr ... |%s|\n", strnstr((char *)mem,"tx", 6));

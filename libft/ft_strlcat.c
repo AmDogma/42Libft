@@ -3,19 +3,20 @@
 size_t	ft_strlcat(char *dest, const char *cpy, size_t n)
 {
 	size_t	i;
-	size_t	destcount;
+	size_t	count;
 
 	i = 0;
-	destcount = 0;
-	while (dest[destcount] != '\0')
-		destcount++;
+	count = 0;
+	while (dest[count] != '\0' && n > count)
+		count++;
 	while (cpy[i] != '\0')
 	{
-		if (n > destcount + i + 1)
-			dest[i + destcount] = cpy[i];
+		if (n > count + i + 1)
+		{
+			dest[i + count] = cpy[i];
+			dest[i + count + 1] = '\0';
+		}
 		i++;
-		dest[i + destcount] = '\0';
 	}
-	dest[i + destcount] = '\0';
-	return (i + destcount);
+	return (count + i);
 }

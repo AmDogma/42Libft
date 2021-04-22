@@ -9,12 +9,9 @@ void	*ft_memchr(void *dest, int ch, size_t n)
 	dubl = (unsigned char *)dest;
 	while (n > i)
 	{
-		if (dubl[i] == ch)
-			break ;
+		if (dubl[i] == (unsigned char)ch)
+			return (dubl + i);
 		i++;
 	}
-	if (n == i)
-		return (NULL);
-	else
-		return (dubl + i);
+	return (NULL);
 }
