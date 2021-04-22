@@ -1,10 +1,8 @@
 #include "libft.h"
 
-// 1) нужна ли проверка на сущ dest 2) Нужно ли его создавать, если нет 
-
 void	*ft_memccpy(void *dest, const void *cpy, int ch, size_t n)
 {
-	int				i;
+	size_t				i;
 	unsigned char	*dubl;
 
 	i = 0;

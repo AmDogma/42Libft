@@ -2,7 +2,7 @@
 
 void	ft_bzero(void *dest, size_t n)
 {
-	int				i;
+	size_t				i;
 	unsigned char	*dubl;
 
 	i = 0;

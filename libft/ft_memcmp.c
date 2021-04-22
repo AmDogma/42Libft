@@ -1,10 +1,8 @@
 #include "libft.h"
 
-// 1) нужна ли проверка на сущ dest 2) Нужно ли его создавать, если нет 
-
 int	ft_memcmp(void *cmp1, const void *cmp2, size_t n)
 {
-	int	i;
+	size_t	i;
 	int	diff;
 
 	i = 0;

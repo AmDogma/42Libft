@@ -2,7 +2,7 @@
 
 size_t	ft_strlcpy(char *dest, const char *cpy, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (cpy[i] != '\0' || n > i - 1)

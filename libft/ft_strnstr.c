@@ -2,8 +2,8 @@
 
 char	*ft_strnstr(const char *str1, const char *str2, size_t n)
 {
-	int	i1;
-	int	i2;
+	size_t	i1;
+	size_t	i2;
 
 	i1 = 0;
 	i2 = 0;

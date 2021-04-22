@@ -2,7 +2,7 @@
 
 void	*ft_memmove(void *dest, const void *cpy, size_t n)
 {
-	int	count;
+	size_t	count;
 
 	count = 0;
 	if (dest > cpy)

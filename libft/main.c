@@ -1,4 +1,6 @@
 #include "libft.h"
+#include <stdio.h>
+
 
 static char forstrmapi(unsigned int i, char c)
 {

@@ -2,7 +2,7 @@
 
 int	ft_strncmp(const char *cmp1, const char *cmp2, size_t n)
 {
-	int	i;
+	size_t	i;
 	int	diff;
 
 	i = 0;

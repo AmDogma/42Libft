@@ -2,8 +2,8 @@
 
 size_t	ft_strlcat(char *dest, const char *cpy, size_t n)
 {
-	int	i;
-	int	destcount;
+	size_t	i;
+	size_t	destcount;
 
 	i = 0;
 	destcount = 0;

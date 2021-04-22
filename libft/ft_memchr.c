@@ -2,7 +2,7 @@
 
 void	*ft_memchr(void *dest, int ch, size_t n)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*dubl;
 
 	i = 0;

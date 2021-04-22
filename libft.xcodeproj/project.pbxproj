@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		240A90FE2631EDBA008D5E00 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 240A90FD2631EDBA008D5E00 /* Makefile */; };
-		244FDAC9262B02A500071985 /* ft_strcmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDAC8262B02A500071985 /* ft_strcmp.c */; };
+		244FDAC9262B02A500071985 /* ft_strncmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDAC8262B02A500071985 /* ft_strncmp.c */; };
 		244FDACB262B087500071985 /* ft_atoi.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDACA262B087500071985 /* ft_atoi.c */; };
 		244FDACF262B24A600071985 /* ft_isalpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDACE262B24A600071985 /* ft_isalpha.c */; };
 		244FDAD1262B273F00071985 /* ft_isdigit.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDAD0262B273E00071985 /* ft_isdigit.c */; };
@@ -60,7 +60,7 @@
 
 /* Begin PBXFileReference section */
 		240A90FD2631EDBA008D5E00 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		244FDAC8262B02A500071985 /* ft_strcmp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strcmp.c; sourceTree = "<group>"; };
+		244FDAC8262B02A500071985 /* ft_strncmp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strncmp.c; sourceTree = "<group>"; };
 		244FDACA262B087500071985 /* ft_atoi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_atoi.c; sourceTree = "<group>"; };
 		244FDACE262B24A600071985 /* ft_isalpha.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_isalpha.c; sourceTree = "<group>"; };
 		244FDAD0262B273E00071985 /* ft_isdigit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_isdigit.c; sourceTree = "<group>"; };
@@ -132,15 +132,15 @@
 			children = (
 				46853A6C2626085900F890EE /* main.c */,
 				24FE89412631EFAD0086857D /* libft.h */,
-				247718FE263073500028EBED /* ft_putnbr_fd.c */,
+				240A90FD2631EDBA008D5E00 /* Makefile */,
 				247718FC263072560028EBED /* ft_putendl_fd.c */,
+				247718FE263073500028EBED /* ft_putnbr_fd.c */,
 				247718FA263070D70028EBED /* ft_putstr_fd.c */,
 				247718F826306D8C0028EBED /* ft_putchar_fd.c */,
 				247718F6263048ED0028EBED /* ft_strmapi.c */,
 				2456A6D9262F182E005AC5F5 /* ft_itoa.c */,
 				247718F426303C940028EBED /* ft_split.c */,
 				24B67D77262EDDF4001AA6A2 /* ft_strtrim.c */,
-				240A90FD2631EDBA008D5E00 /* Makefile */,
 				244FDAE4262B581300071985 /* ft_strjoin.c */,
 				244FDAE0262B504D00071985 /* ft_substr.c */,
 				244FDADE262B461300071985 /* ft_strdup.c */,
@@ -153,7 +153,7 @@
 				244FDAD0262B273E00071985 /* ft_isdigit.c */,
 				244FDACE262B24A600071985 /* ft_isalpha.c */,
 				244FDACA262B087500071985 /* ft_atoi.c */,
-				244FDAC8262B02A500071985 /* ft_strcmp.c */,
+				244FDAC8262B02A500071985 /* ft_strncmp.c */,
 				249359B1262A0B3A00954A80 /* ft_strnstr.c */,
 				249359AD2629FA7500954A80 /* ft_strchr.c */,
 				249359AF2629FE4300954A80 /* ft_strrchr.c */,
@@ -258,7 +258,7 @@
 				249359AC2629C27900954A80 /* ft_strlcat.c in Sources */,
 				2456A6DA262F182E005AC5F5 /* ft_itoa.c in Sources */,
 				244FDAD7262B2CC300071985 /* ft_isprint.c in Sources */,
-				244FDAC9262B02A500071985 /* ft_strcmp.c in Sources */,
+				244FDAC9262B02A500071985 /* ft_strncmp.c in Sources */,
 				249359B02629FE4300954A80 /* ft_strrchr.c in Sources */,
 				244FDACB262B087500071985 /* ft_atoi.c in Sources */,
 				244FDADB262B308500071985 /* ft_tolower.c in Sources */,

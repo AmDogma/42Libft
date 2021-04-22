@@ -3,7 +3,7 @@
 char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
 	char	*dest;
-	int		num;
+	size_t	num;
 
 	num = (int)ft_strlen(str + start);
 	if (num < len)
