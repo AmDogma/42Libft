@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240A90FE2631EDBA008D5E00 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 240A90FD2631EDBA008D5E00 /* Makefile */; };
 		244FDAC9262B02A500071985 /* ft_strcmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDAC8262B02A500071985 /* ft_strcmp.c */; };
 		244FDACB262B087500071985 /* ft_atoi.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDACA262B087500071985 /* ft_atoi.c */; };
-		244FDACD262B158000071985 /* libft.h in Sources */ = {isa = PBXBuildFile; fileRef = 244FDACC262B157F00071985 /* libft.h */; };
 		244FDACF262B24A600071985 /* ft_isalpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDACE262B24A600071985 /* ft_isalpha.c */; };
 		244FDAD1262B273F00071985 /* ft_isdigit.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDAD0262B273E00071985 /* ft_isdigit.c */; };
 		244FDAD3262B27BA00071985 /* ft_isalnum.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDAD2262B27BA00071985 /* ft_isalnum.c */; };
@@ -33,6 +33,7 @@
 		249359B02629FE4300954A80 /* ft_strrchr.c in Sources */ = {isa = PBXBuildFile; fileRef = 249359AF2629FE4300954A80 /* ft_strrchr.c */; };
 		249359B2262A0B3A00954A80 /* ft_strnstr.c in Sources */ = {isa = PBXBuildFile; fileRef = 249359B1262A0B3A00954A80 /* ft_strnstr.c */; };
 		24B67D78262EDDF4001AA6A2 /* ft_strtrim.c in Sources */ = {isa = PBXBuildFile; fileRef = 24B67D77262EDDF4001AA6A2 /* ft_strtrim.c */; };
+		24FE89422631EFAD0086857D /* libft.h in Sources */ = {isa = PBXBuildFile; fileRef = 24FE89412631EFAD0086857D /* libft.h */; };
 		46853A6D2626085900F890EE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 46853A6C2626085900F890EE /* main.c */; };
 		46853A7526260B6000F890EE /* ft_memset.c in Sources */ = {isa = PBXBuildFile; fileRef = 46853A7426260B6000F890EE /* ft_memset.c */; };
 		46853A7B26270AA700F890EE /* ft_bzero.c in Sources */ = {isa = PBXBuildFile; fileRef = 46853A7A26270AA700F890EE /* ft_bzero.c */; };
@@ -58,9 +59,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		240A90FD2631EDBA008D5E00 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		244FDAC8262B02A500071985 /* ft_strcmp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strcmp.c; sourceTree = "<group>"; };
 		244FDACA262B087500071985 /* ft_atoi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_atoi.c; sourceTree = "<group>"; };
-		244FDACC262B157F00071985 /* libft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libft.h; sourceTree = "<group>"; };
 		244FDACE262B24A600071985 /* ft_isalpha.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_isalpha.c; sourceTree = "<group>"; };
 		244FDAD0262B273E00071985 /* ft_isdigit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_isdigit.c; sourceTree = "<group>"; };
 		244FDAD2262B27BA00071985 /* ft_isalnum.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_isalnum.c; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		249359AF2629FE4300954A80 /* ft_strrchr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strrchr.c; sourceTree = "<group>"; };
 		249359B1262A0B3A00954A80 /* ft_strnstr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strnstr.c; sourceTree = "<group>"; usesTabs = 1; };
 		24B67D77262EDDF4001AA6A2 /* ft_strtrim.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strtrim.c; sourceTree = "<group>"; };
+		24FE89412631EFAD0086857D /* libft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libft.h; sourceTree = "<group>"; };
 		46853A692626085900F890EE /* libft */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libft; sourceTree = BUILT_PRODUCTS_DIR; };
 		46853A6C2626085900F890EE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		46853A7426260B6000F890EE /* ft_memset.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_memset.c; sourceTree = "<group>"; };
@@ -128,8 +130,8 @@
 		46853A6B2626085900F890EE /* libft */ = {
 			isa = PBXGroup;
 			children = (
-				244FDACC262B157F00071985 /* libft.h */,
 				46853A6C2626085900F890EE /* main.c */,
+				24FE89412631EFAD0086857D /* libft.h */,
 				247718FE263073500028EBED /* ft_putnbr_fd.c */,
 				247718FC263072560028EBED /* ft_putendl_fd.c */,
 				247718FA263070D70028EBED /* ft_putstr_fd.c */,
@@ -138,6 +140,7 @@
 				2456A6D9262F182E005AC5F5 /* ft_itoa.c */,
 				247718F426303C940028EBED /* ft_split.c */,
 				24B67D77262EDDF4001AA6A2 /* ft_strtrim.c */,
+				240A90FD2631EDBA008D5E00 /* Makefile */,
 				244FDAE4262B581300071985 /* ft_strjoin.c */,
 				244FDAE0262B504D00071985 /* ft_substr.c */,
 				244FDADE262B461300071985 /* ft_strdup.c */,
@@ -227,9 +230,11 @@
 				247718F7263048ED0028EBED /* ft_strmapi.c in Sources */,
 				247718FB263070D70028EBED /* ft_putstr_fd.c in Sources */,
 				247718F926306D8C0028EBED /* ft_putchar_fd.c in Sources */,
+				24FE89422631EFAD0086857D /* libft.h in Sources */,
 				244FDADD262B311B00071985 /* ft_calloc.c in Sources */,
 				244FDAD5262B291A00071985 /* ft_isascii.c in Sources */,
 				46853A7526260B6000F890EE /* ft_memset.c in Sources */,
+				240A90FE2631EDBA008D5E00 /* Makefile in Sources */,
 				46853A982628907600F890EE /* ft_strlcpy.c in Sources */,
 				244FDAD1262B273F00071985 /* ft_isdigit.c in Sources */,
 				46853A9426288C7F00F890EE /* ft_strlen.c in Sources */,
@@ -253,7 +258,6 @@
 				249359AC2629C27900954A80 /* ft_strlcat.c in Sources */,
 				2456A6DA262F182E005AC5F5 /* ft_itoa.c in Sources */,
 				244FDAD7262B2CC300071985 /* ft_isprint.c in Sources */,
-				244FDACD262B158000071985 /* libft.h in Sources */,
 				244FDAC9262B02A500071985 /* ft_strcmp.c in Sources */,
 				249359B02629FE4300954A80 /* ft_strrchr.c in Sources */,
 				244FDACB262B087500071985 /* ft_atoi.c in Sources */,
