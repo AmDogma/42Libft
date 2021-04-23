@@ -34,10 +34,12 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	add = 0;
+	if (!(*s))
+		return (NULL);
 	temp = (char **)malloc(sizeof(char *) * (ft_msize(s, c) + 1));
 	while (s[i] != '\0' && temp)
 	{
-		if (s[i - 1] == c || i == 0)
+		if (i == 0 || s[i - 1] == c)
 		{
 			if (ft_chsize(s + i, c))
 				temp[add++] = ft_substr(s, i, ft_chsize(s + i, c));

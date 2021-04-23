@@ -5,7 +5,7 @@ static int	ft_nsize(int n)
 	int	i;
 
 	i = 0;
-	if (n < 0)
+	if (n < 0 || !n)
 		i++;
 	while (n != 0)
 	{
@@ -26,6 +26,8 @@ char	*ft_itoa(int n)
 	{
 		if (n < 0)
 			dest[0] = '-';
+		else if (!n)
+			dest[0] = '0';
 		dest[i--] = '\0';
 		while (n != 0)
 		{

@@ -47,17 +47,17 @@ int main() {
 	//printf("%s\n", ft_strdup((char *)mem));
 	//printf("%s\n", ft_substr((char *)mem, 400, 20));
 	//printf("%s", ft_strjoin((char *)mem, (char *)mem));
-	printf("%s", ft_strtrim("          ", " "));
+	//printf("%s", ft_strtrim("      ", " "));
 	/* далее split
 	int		i = 0;
-	char **temp = ft_split("111eee222eee1ee333", 'e');
-	while (temp[i])
+	char **temp = ft_split("в в  в  в", ' ');
+	while (temp+i)
 	{
 		printf("SPLIT #%d %s\n", i, temp[i]);
 		i++;
 	}
 	конец сплит */
-	//printf("ITOA = %s\n", ft_itoa(2147483647));
+	printf("ITOA = %s\n", ft_itoa(0));
 	//printf("STRMAPI %s\n", ft_strmapi("abrakadabra", &forstrmapi));
 	//ft_putchar_fd('!', 1);
 	//ft_putstr_fd("1231231231\n", 1);

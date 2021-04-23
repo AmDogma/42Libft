@@ -4,25 +4,26 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*dest;
 	int		num;
+	int		i;
 
+	i = 0;
 	dest = ft_strdup(s1);
-	if (!dest)
-		return (dest);
 	num = (int)ft_strlen(s1) - 1;
-	while (*set != '\0')
+	while (set[i] != '\0' && dest && num >= 0)
 	{
-		if (dest[num] == *set)
+		if (dest[num] == set[i])
 		{
 			dest[num--] = '\0';
-			continue ;
+			i = 0;
 		}
-		if (*dest == *set)
+		else if (*dest == set[i])
 		{
-			dest += 1;
+			dest++;
 			num--;
-			continue ;
+			i = 0;
 		}
-		set++;
+		else
+			i++;
 	}
 	return (dest);
 }
