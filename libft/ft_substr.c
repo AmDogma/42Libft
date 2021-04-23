@@ -4,8 +4,9 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
 	char	*dest;
 	size_t	num;
-
-	num = (int)ft_strlen(str + start);
+	if (start > (unsigned int)ft_strlen(str))
+		return ("\0");
+	num = (int)ft_strlen(str + start) + 1;
 	if (num < len)
 		len = num;
 	dest = (char *)malloc(sizeof(char *) * num);

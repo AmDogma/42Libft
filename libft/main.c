@@ -34,7 +34,7 @@ int main() {
     //printf("ft_strchr ... %s\n", strchr((char *)cpy, '\0'));
      //printf("ft_strRchr ... %s\n", ft_strrchr((char *)mem, 't'));
     //printf("ft_strNstr ... |%s|\n", strnstr((char *)mem,"tx", 6));
-    printf("ft_strncmp... |%d|\n", ft_strncmp("test\200", "test\0", 6));
+    //printf("ft_strncmp... |%d|\n", ft_strncmp("test\200", "test\0", 6));
 	//printf("ATOI = %d", ft_atoi("   2148356483"));
 	//printf("Is alpha - %d\n", ft_isalpha('@'));
 	//printf("Is digit - %d\n", ft_isdigit('9'));
@@ -45,9 +45,9 @@ int main() {
 	//printf("To lower - %c\n", ft_tolower('3'));
 	//printf("%p\n", ft_calloc(4000000000, 56667));
 	//printf("%s\n", ft_strdup((char *)mem));
-	//printf("%s\n", ft_substr((char *)mem, 18, 10));
+	//printf("%s\n", ft_substr((char *)mem, 400, 20));
 	//printf("%s", ft_strjoin((char *)mem, (char *)mem));
-	//printf("%s", ft_strtrim("asadasdaaa", "ads"))
+	printf("%s", ft_strtrim("          ", " "));
 	/* далее split
 	int		i = 0;
 	char **temp = ft_split("111eee222eee1ee333", 'e');
