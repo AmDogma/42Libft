@@ -18,7 +18,7 @@ int main() {
 	c[7] = '\0';
 	printf("%s\n", (unsigned char *)c);
 	ft_bzero(c, 8);
-	unsigned char mem[44] = "1111", cpy[44] = "1111"; //ome text here you! see?
+	unsigned char mem[44] = "some text here you! see?", cpy[] = "bonjour"; //ome text here you! see?
 	//ft_memcpy(cpy, mem, 2);
 	//void *str = cpy;
 	//str = ft_memset(c, '3', 3);
@@ -29,13 +29,12 @@ int main() {
 
 	//printf("%d", ft_memcmp(mem, cpy, 15));
 	//printf("%d\n", (int)ft_strlen((char *)mem));
-    //printf("%lu %s", ft_strlcpy((char *)cpy, "fejjfjffdfdfd", 8), cpy);
-	printf("\nMY %lu, %s\n", ft_strlcat((char *)mem, "2222222", 3), mem);
-	printf("NO %lu, %s\n", strlcat((char *)cpy, "2222222", 3), cpy);
-    //printf("ft_strchr ... %s\n", ft_strchr((char *)mem, 't'));
+    //printf("%lu \n", ft_strlcpy((char *)cpy, "", 15));
+	//printf("\nMY %lu, %s\n", ft_strlcat((char *)mem, "2222222", 3), mem);
+    //printf("ft_strchr ... %s\n", strchr((char *)cpy, '\0'));
      //printf("ft_strRchr ... %s\n", ft_strrchr((char *)mem, 't'));
     //printf("ft_strNstr ... |%s|\n", strnstr((char *)mem,"tx", 6));
-    //printf("ft_strncmp... |%d|\n", ft_strncmp((char *)mem,"some txte", 17));
+    printf("ft_strncmp... |%d|\n", ft_strncmp("test\200", "test\0", 6));
 	//printf("ATOI = %d", ft_atoi("   2148356483"));
 	//printf("Is alpha - %d\n", ft_isalpha('@'));
 	//printf("Is digit - %d\n", ft_isdigit('9'));

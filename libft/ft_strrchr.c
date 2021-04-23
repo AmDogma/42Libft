@@ -13,5 +13,7 @@ char	*ft_strrchr(const char *str, int n)
             temp = (char *)str + i;
         i++;
     }
+	if (str[i] == n)
+		return ((char *)str + i);
 	return (temp);
 }
