@@ -35,7 +35,7 @@ int main() {
      //printf("ft_strRchr ... %s\n", ft_strrchr((char *)mem, 't'));
     //printf("ft_strNstr ... |%s|\n", strnstr((char *)mem,"tx", 6));
     //printf("ft_strncmp... |%d|\n", ft_strncmp("test\200", "test\0", 6));
-	//printf("ATOI = %d", ft_atoi("   2148356483"));
+	//printf("ATOI = %d", ft_atoi("   -2147483648.999"));
 	//printf("Is alpha - %d\n", ft_isalpha('@'));
 	//printf("Is digit - %d\n", ft_isdigit('9'));
 	//printf("Is alnum - %d\n", ft_isalnum('A'));
@@ -47,7 +47,7 @@ int main() {
 	//printf("%s\n", ft_strdup((char *)mem));
 	//printf("%s\n", ft_substr((char *)mem, 400, 20));
 	//printf("%s", ft_strjoin((char *)mem, (char *)mem));
-	//printf("%s", ft_strtrim("      ", " "));
+	//printf("%s", ft_strtrim("   \t  \n\n \t\t  \n\n\nHello \t  Please\n Trim me !\n   \n \n \t\t\n  ", "Hello \t  Please\n Trim me !"));
 	/* далее split
 	int		i = 0;
 	char **temp = ft_split("в в  в  в", ' ');
@@ -57,7 +57,7 @@ int main() {
 		i++;
 	}
 	конец сплит */
-	printf("ITOA = %s\n", ft_itoa(0));
+	printf("ITOA = %s\n", ft_itoa(-5859));
 	//printf("STRMAPI %s\n", ft_strmapi("abrakadabra", &forstrmapi));
 	//ft_putchar_fd('!', 1);
 	//ft_putstr_fd("1231231231\n", 1);

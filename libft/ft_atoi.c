@@ -8,8 +8,8 @@ static int	ft_isspace(int c)
 
 int	ft_atoi(const char *str)
 {
-	int			minus;
-	long long	res;
+	int	minus;
+	int	res;
 
 	minus = 1;
 	res = 0;
@@ -23,7 +23,10 @@ int	ft_atoi(const char *str)
 	}
 	while (*str > 47 && *str < 58)
 	{
-		res = (res * 10) + (*str++) - 48;
+		if (minus > 0)
+			res = (res * 10) + (*str++) - 48;
+		else
+			res = (res * 10) - ((*str++) - 48);
 	}
-	return ((int)(res * minus));
+	return (res);
 }

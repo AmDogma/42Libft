@@ -7,7 +7,7 @@ size_t	ft_strlcpy(char *dest, const char *cpy, size_t n)
 	i = 0;
 	if (dest && n != 0)
 		dest[0] = '\0';
-	while (cpy[i] != '\0')
+	while (cpy[i] != '\0' && cpy + i)
 	{
 		if (n > i + 1)
 		{

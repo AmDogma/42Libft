@@ -7,7 +7,7 @@ void	*ft_memmove(void *dest, const void *cpy, size_t n)
 	count = 0;
 	if (dest > cpy)
 	{
-		while (count < n)
+		while (count < n && (dest || cpy))
 		{
 			*((unsigned char *)dest + n - 1) = *((unsigned char *)cpy + n - 1);
 			n--;
@@ -15,7 +15,7 @@ void	*ft_memmove(void *dest, const void *cpy, size_t n)
 	}
 	else
 	{
-		while (count < n)
+		while (count < n && (dest || cpy))
 		{
 			*((unsigned char *)dest + count) = *((unsigned char *)cpy + count);
 			count++;

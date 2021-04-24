@@ -2,9 +2,9 @@
 
 # define LIBFT_H
 
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
+# include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 void	*ft_memset(void *dest, int simb, size_t n);
 void	ft_bzero(void *dest, size_t n);

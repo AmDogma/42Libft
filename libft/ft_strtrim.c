@@ -19,6 +19,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		else if (*dest == set[i])
 		{
 			dest++;
+			dest[-1] = '\0';
 			num--;
 			i = 0;
 		}
