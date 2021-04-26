@@ -21,7 +21,7 @@ char	*ft_itoa(int n)
 	char	*dest;
 
 	i = ft_nsize(n);
-	dest = (char *)malloc(sizeof(char *) * (i + 1));
+	dest = (char *)malloc(sizeof(char) * (i + 1));
 	if (dest)
 	{
 		if (n < 0)

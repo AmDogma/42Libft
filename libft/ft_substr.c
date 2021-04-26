@@ -5,10 +5,12 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	char	*dest;
 	size_t	num;
 
+	if (str == NULL)
+		return (NULL);
 	num = (int)ft_strlen(str + start);
 	if (num < len)
 		len = num;
-	dest = (char *)malloc(sizeof(char *) * (len + 1));
+	dest = (char *)malloc(sizeof(char) * (len + 1));
 	if (start > (unsigned int)ft_strlen(str) && dest)
 		dest[0] = '\0';
 	else if (dest)

@@ -7,8 +7,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*temp;
 
 	i = 0;
+	if (s == NULL)
+		return (NULL);
 	add = (int)ft_strlen(s);
-	temp = (char *)malloc(sizeof(char *) * (add + 1));
+	temp = (char *)malloc(sizeof(char) * (add + 1));
 	while (s[i] != '\0' && temp)
 	{
 		temp[i] = (*f)(i, s[i]);
@@ -17,5 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		i++;
 		temp[i] = '\0';
 	}
+	if (temp && s[i] == '\0')
+		temp[i] = '\0';
 	return (temp);
 }

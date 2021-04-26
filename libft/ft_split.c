@@ -34,18 +34,29 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	add = 0;
-	if (!(*s))
+	if (s == NULL)
 		return (NULL);
 	temp = (char **)malloc(sizeof(char *) * (ft_msize(s, c) + 1));
 	while (s[i] != '\0' && temp)
 	{
-		if (i == 0 || s[i - 1] == c)
+		if (i == 0 || (s[i - 1] == c && i > 0))
 		{
 			if (ft_chsize(s + i, c))
-				temp[add++] = ft_substr(s, i, ft_chsize(s + i, c));
-			temp[add] = 0;
+			{
+				temp[add] = ft_substr(s, i, ft_chsize(s + i, c));
+				if (temp[add++] == NULL)
+				{
+					while (add >= 0)
+						free(temp[add--]);
+					free (temp);
+					return (NULL);
+				}
+			}
+			temp[add] = NULL;
 		}
 		i++;
 	}
+	if (!*s)
+		*temp = NULL;
 	return (temp);
 }
