@@ -1,6 +1,6 @@
 #include "libft.h"
 
-static char *dop_trim(int end, const char *s1, const char *set)
+static char	*dop_trim(int end, const char *s1, const char *set)
 {
 	int		start;
 	int		i;
