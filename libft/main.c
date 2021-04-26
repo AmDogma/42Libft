@@ -48,7 +48,7 @@ int main() {
 	//printf("%s\n", ft_strdup((char *)mem));
 	//printf("%s\n", ft_substr((char *)mem, 400, 20));
 	//printf("%s", ft_strjoin((char *)mem, (char *)mem));
-	//printf("%s", ft_strtrim("123456789f", "1234567456789"));
+	//printf("%s", ft_strtrim("123456789", "1234567456789"));
 	/* далее split
 	int		i = 0;
 	char **temp = ft_split("в в  в  в", ' ');
