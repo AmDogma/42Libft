@@ -26,17 +26,13 @@ static int	ft_msize(const char *s, char c)
 	return (i);
 }
 
-char	**ft_split(char const *s, char c)
+static char	**split_dop(char c, char const *s, char **temp)
 {
 	int		i;
 	int		add;
-	char	**temp;
 
 	i = 0;
 	add = 0;
-	if (s == NULL)
-		return (NULL);
-	temp = (char **)malloc(sizeof(char *) * (ft_msize(s, c) + 1));
 	while (s[i] != '\0' && temp)
 	{
 		if (i == 0 || (s[i - 1] == c && i > 0))
@@ -56,6 +52,18 @@ char	**ft_split(char const *s, char c)
 		}
 		i++;
 	}
+	return (temp);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**temp;
+
+	if (s == NULL)
+		return (NULL);
+	temp = (char **)malloc(sizeof(char *) * (ft_msize(s, c) + 1));
+	if (temp)
+		temp = split_dop(c, s, temp);
 	if (!*s)
 		*temp = NULL;
 	return (temp);

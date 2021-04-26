@@ -48,7 +48,7 @@ int main() {
 	//printf("%s\n", ft_strdup((char *)mem));
 	//printf("%s\n", ft_substr((char *)mem, 400, 20));
 	//printf("%s", ft_strjoin((char *)mem, (char *)mem));
-	//printf("%s", ft_strtrim("   \t  \n\n \t\t  \n\n\nHello444 \t  Please\n Trim me !\n   \n \n \t\t\n  ", "Hello \t  Please\n Trim me !"));
+	//printf("%s", ft_strtrim("123456789f", "1234567456789"));
 	/* далее split
 	int		i = 0;
 	char **temp = ft_split("в в  в  в", ' ');
@@ -59,7 +59,7 @@ int main() {
 	}
 	конец сплит */
 	//printf("ITOA = %s\n", ft_itoa(-5859));
-	printf("STRMAPI %s\n", ft_strmapi("", &forstrmapi));
+	//printf("STRMAPI %s\n", ft_strmapi("", &forstrmapi));
 	//ft_putchar_fd('!', 1);
 	//ft_putstr_fd("1231231231\n", 1);
 	//ft_putendl_fd("1231231231", 1);
