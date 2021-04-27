@@ -5,10 +5,13 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	t_list *temp;
 
 	temp = *lst;
-	while (temp->next)
-		temp = temp->next;
-	if (temp)
+	if (!*lst)
+		*lst = new;
+	if (lst && temp)
 	{
-		temp->next = new;
+		while (temp->next)
+			temp = temp->next;
 	}
+	if (temp && new)
+			temp->next = new;
 }

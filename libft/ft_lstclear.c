@@ -14,5 +14,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		free(toclear);
 		toclear = temp;
 	}
-	*lst = ((void *)0);
+	*lst = NULL;
 }

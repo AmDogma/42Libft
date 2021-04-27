@@ -29,7 +29,7 @@ int main() {
 
 	//printf("%d", ft_memcmp(mem, cpy, 15));
 	//printf("%d\n", (int)ft_strlen((char *)mem));
-    //printf("%lu \n", ft_strlcpy((char *)cpy, "", 15));
+    //printf("%lu \n", ft_strlcpy(NULL, "4", 15));
 	//printf("\nMY %lu, %s\n", ft_strlcat((char *)mem, "2222222", 3), mem);
     //printf("ft_strchr ... %s\n", ft_strchr("tripouille", 't' + 256));
      //printf("ft_strRchr ... %s\n", ft_strrchr((char *)mem, 't'));
