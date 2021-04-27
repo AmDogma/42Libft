@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		240A90FE2631EDBA008D5E00 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 240A90FD2631EDBA008D5E00 /* Makefile */; };
+		2435191D26383FB900A830C2 /* ft_lstnew.c in Sources */ = {isa = PBXBuildFile; fileRef = 2435191C26383FB900A830C2 /* ft_lstnew.c */; };
+		2435191F2638429500A830C2 /* ft_lstadd_front.c in Sources */ = {isa = PBXBuildFile; fileRef = 2435191E2638429500A830C2 /* ft_lstadd_front.c */; };
+		24351921263843D800A830C2 /* ft_lstsize.c in Sources */ = {isa = PBXBuildFile; fileRef = 24351920263843D800A830C2 /* ft_lstsize.c */; };
+		243519232638446B00A830C2 /* ft_lstlast.c in Sources */ = {isa = PBXBuildFile; fileRef = 243519222638446B00A830C2 /* ft_lstlast.c */; };
+		24351925263844F900A830C2 /* ft_lstadd_back.c in Sources */ = {isa = PBXBuildFile; fileRef = 24351924263844F900A830C2 /* ft_lstadd_back.c */; };
+		24351927263845D100A830C2 /* ft_lstdelone.c in Sources */ = {isa = PBXBuildFile; fileRef = 24351926263845D100A830C2 /* ft_lstdelone.c */; };
+		243519292638473A00A830C2 /* ft_lstclear.c in Sources */ = {isa = PBXBuildFile; fileRef = 243519282638473A00A830C2 /* ft_lstclear.c */; };
+		2435192B263848FC00A830C2 /* ft_lstiter.c in Sources */ = {isa = PBXBuildFile; fileRef = 2435192A263848FC00A830C2 /* ft_lstiter.c */; };
+		2435192D26384A5800A830C2 /* ft_lstmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 2435192C26384A5800A830C2 /* ft_lstmap.c */; };
 		244FDAC9262B02A500071985 /* ft_strncmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDAC8262B02A500071985 /* ft_strncmp.c */; };
 		244FDACB262B087500071985 /* ft_atoi.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDACA262B087500071985 /* ft_atoi.c */; };
 		244FDACF262B24A600071985 /* ft_isalpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 244FDACE262B24A600071985 /* ft_isalpha.c */; };
@@ -60,6 +69,15 @@
 
 /* Begin PBXFileReference section */
 		240A90FD2631EDBA008D5E00 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2435191C26383FB900A830C2 /* ft_lstnew.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstnew.c; sourceTree = "<group>"; };
+		2435191E2638429500A830C2 /* ft_lstadd_front.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstadd_front.c; sourceTree = "<group>"; };
+		24351920263843D800A830C2 /* ft_lstsize.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstsize.c; sourceTree = "<group>"; };
+		243519222638446B00A830C2 /* ft_lstlast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstlast.c; sourceTree = "<group>"; };
+		24351924263844F900A830C2 /* ft_lstadd_back.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstadd_back.c; sourceTree = "<group>"; };
+		24351926263845D100A830C2 /* ft_lstdelone.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstdelone.c; sourceTree = "<group>"; };
+		243519282638473A00A830C2 /* ft_lstclear.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstclear.c; sourceTree = "<group>"; };
+		2435192A263848FC00A830C2 /* ft_lstiter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstiter.c; sourceTree = "<group>"; };
+		2435192C26384A5800A830C2 /* ft_lstmap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_lstmap.c; sourceTree = "<group>"; };
 		244FDAC8262B02A500071985 /* ft_strncmp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strncmp.c; sourceTree = "<group>"; };
 		244FDACA262B087500071985 /* ft_atoi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_atoi.c; sourceTree = "<group>"; };
 		244FDACE262B24A600071985 /* ft_isalpha.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_isalpha.c; sourceTree = "<group>"; };
@@ -130,9 +148,18 @@
 		46853A6B2626085900F890EE /* libft */ = {
 			isa = PBXGroup;
 			children = (
-				46853A6C2626085900F890EE /* main.c */,
 				24FE89412631EFAD0086857D /* libft.h */,
+				46853A6C2626085900F890EE /* main.c */,
 				240A90FD2631EDBA008D5E00 /* Makefile */,
+				2435192C26384A5800A830C2 /* ft_lstmap.c */,
+				2435192A263848FC00A830C2 /* ft_lstiter.c */,
+				243519282638473A00A830C2 /* ft_lstclear.c */,
+				24351926263845D100A830C2 /* ft_lstdelone.c */,
+				24351924263844F900A830C2 /* ft_lstadd_back.c */,
+				243519222638446B00A830C2 /* ft_lstlast.c */,
+				24351920263843D800A830C2 /* ft_lstsize.c */,
+				2435191E2638429500A830C2 /* ft_lstadd_front.c */,
+				2435191C26383FB900A830C2 /* ft_lstnew.c */,
 				247718FC263072560028EBED /* ft_putendl_fd.c */,
 				247718FE263073500028EBED /* ft_putnbr_fd.c */,
 				247718FA263070D70028EBED /* ft_putstr_fd.c */,
@@ -229,17 +256,22 @@
 			files = (
 				247718F7263048ED0028EBED /* ft_strmapi.c in Sources */,
 				247718FB263070D70028EBED /* ft_putstr_fd.c in Sources */,
+				243519292638473A00A830C2 /* ft_lstclear.c in Sources */,
 				247718F926306D8C0028EBED /* ft_putchar_fd.c in Sources */,
 				24FE89422631EFAD0086857D /* libft.h in Sources */,
 				244FDADD262B311B00071985 /* ft_calloc.c in Sources */,
 				244FDAD5262B291A00071985 /* ft_isascii.c in Sources */,
 				46853A7526260B6000F890EE /* ft_memset.c in Sources */,
+				243519232638446B00A830C2 /* ft_lstlast.c in Sources */,
+				2435192D26384A5800A830C2 /* ft_lstmap.c in Sources */,
 				240A90FE2631EDBA008D5E00 /* Makefile in Sources */,
 				46853A982628907600F890EE /* ft_strlcpy.c in Sources */,
 				244FDAD1262B273F00071985 /* ft_isdigit.c in Sources */,
+				24351925263844F900A830C2 /* ft_lstadd_back.c in Sources */,
 				46853A9426288C7F00F890EE /* ft_strlen.c in Sources */,
 				46853A7B26270AA700F890EE /* ft_bzero.c in Sources */,
 				244FDAE1262B504D00071985 /* ft_substr.c in Sources */,
+				24351927263845D100A830C2 /* ft_lstdelone.c in Sources */,
 				249359B2262A0B3A00954A80 /* ft_strnstr.c in Sources */,
 				46853A872628586C00F890EE /* ft_memmove.c in Sources */,
 				244FDAD3262B27BA00071985 /* ft_isalnum.c in Sources */,
@@ -250,12 +282,16 @@
 				244FDAE5262B581300071985 /* ft_strjoin.c in Sources */,
 				46853A8F2628880500F890EE /* ft_memcmp.c in Sources */,
 				249359AE2629FA7500954A80 /* ft_strchr.c in Sources */,
+				24351921263843D800A830C2 /* ft_lstsize.c in Sources */,
 				244FDADF262B461300071985 /* ft_strdup.c in Sources */,
+				2435191D26383FB900A830C2 /* ft_lstnew.c in Sources */,
 				46853A8B2628760B00F890EE /* ft_memchr.c in Sources */,
 				244FDAD9262B2F2700071985 /* ft_toupper.c in Sources */,
+				2435192B263848FC00A830C2 /* ft_lstiter.c in Sources */,
 				46853A7F2627249F00F890EE /* ft_memcpy.c in Sources */,
 				247718FD263072560028EBED /* ft_putendl_fd.c in Sources */,
 				249359AC2629C27900954A80 /* ft_strlcat.c in Sources */,
+				2435191F2638429500A830C2 /* ft_lstadd_front.c in Sources */,
 				2456A6DA262F182E005AC5F5 /* ft_itoa.c in Sources */,
 				244FDAD7262B2CC300071985 /* ft_isprint.c in Sources */,
 				244FDAC9262B02A500071985 /* ft_strncmp.c in Sources */,

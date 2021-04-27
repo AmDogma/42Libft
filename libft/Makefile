@@ -9,27 +9,35 @@ FILES = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
 			ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 			ft_isdigit.c
 
+FILES_B = 	ft_lstmap.c ft_lstiter.c ft_lstclear.c ft_lstdelone.c ft_lstnew.c \
+			ft_lstadd_back.c ft_lstlast.c ft_lstsize.c ft_lstadd_front.c \
+
 FLAGS = -Wall -Werror -Wextra
 
 OBJ = $(patsubst %.c,%.o,$(FILES))
 
-all: $(NAME)
+OBJ_B = $(patsubst %.c,%.o,$(FILES_B))
 
-$(NAME): $(OBJ)
+all : $(NAME)
+
+$(NAME) : $(OBJ)
 	ar rcs $(NAME) $?
 
 %.o : %.c
 	gcc $(FLAGS) -c $< -o $@
 
-clean:
+bonus :
+	@make OBJ="$(OBJ_B)" all
+
+clean :
 	/bin/rm -f $(OBJ)
 
-fclean: clean
+fclean : clean
 	/bin/rm -f $(NAME)
 
-re: fclean all
+re : fclean all
 
-.PHONY: all clean fclean re
+.PHONY : all clean fclean re
 
 #norm :
 #	norminette -R CheckForbiddenSourceHeader */*.[ch]
