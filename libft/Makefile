@@ -26,8 +26,8 @@ $(NAME) : $(OBJ)
 %.o : %.c
 	gcc $(FLAGS) -c $< -o $@
 
-bonus : $(OBJ) $(OBJ_B)
-	@make OBJ="$(OBJ_B)"
+bonus : $(OBJ_B) $(OBJ)
+	ar rcs $(NAME) $?
 
 clean :
 	/bin/rm -f $(OBJ) $(OBJ_B)
