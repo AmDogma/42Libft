@@ -21,7 +21,7 @@ int main() {
 	unsigned char mem[44] = "some text here you! see?", cpy[] = "bonjour"; //ome text here you! see?
 	//ft_memcpy(cpy, mem, 2);
 	//void *str = cpy;
-	//str = ft_memset(c, '3', 3);
+//	printf("%s", (char *)ft_memset(c, '3', 8));
 	//printf("%s\n", ft_memccpy(cpy, "zyxwvutsrqponmlkjihgfedcba", 'r', 20));
 	//printf("MEMMOVE = %s\n", ft_memmove(mem+5, mem+3, 2));
 	//printf("%s\n", (char *)ft_memchr(mem, 't', 11));
@@ -35,8 +35,8 @@ int main() {
      //printf("ft_strRchr ... %s\n", ft_strrchr((char *)mem, 't'));
 	//printf("ft_strNstr ... |%s|\n", ft_strnstr("aaabcabcd", "cd", 8));
     //printf("ft_strncmp... |%d|\n", ft_strncmp("test\200", "test\0", 6));
-	//printf("\nATOI = %d\n", ft_atoi("   2147483647.999"));
-	//printf("ATOI = %d", atoi("   2147483647.999"));
+	//printf("\nATOI = %d\n", ft_atoi("   2147483649.999"));
+	//printf("ATOI = %d", atoi("   2147483649.999"));
 	//printf("Is alpha - %d\n", ft_isalpha('@'));
 	//printf("Is digit - %d\n", ft_isdigit('9'));
 	//printf("Is alnum - %d\n", ft_isalnum('A'));
@@ -51,19 +51,22 @@ int main() {
 	//printf("%s", ft_strtrim("123456789", "1234567456789"));
 	/* далее split
 	int		i = 0;
-	char **temp = ft_split("в в  в  в", ' ');
+	char **temp = ft_split("в в;  в  ;в", ';');
 	while (temp[i])
 	{
 		printf("SPLIT #%d %s\n", i, temp[i]);
 		i++;
-	}
-	конец сплит */
+	}*/
+	//конец сплит
 	//printf("ITOA = %s\n", ft_itoa(-5859));
 	//printf("STRMAPI %s\n", ft_strmapi("", &forstrmapi));
 	//ft_putchar_fd('!', 1);
 	//ft_putstr_fd("1231231231\n", 1);
 	//ft_putendl_fd("1231231231", 1);
 	//ft_putnbr_fd(12131231, 1);
-	
+	/*char ss[] = "222";
+	t_list *new = ft_lstnew((void *)ss);
+	printf("lst new :%s\n", (char *)(new->content));
+	 */
 	return 0;
 }

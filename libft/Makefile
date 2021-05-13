@@ -14,9 +14,9 @@ FILES_B = 	ft_lstmap.c ft_lstiter.c ft_lstclear.c ft_lstdelone.c ft_lstnew.c \
 
 FLAGS = -Wall -Werror -Wextra
 
-OBJ = $(patsubst %.c,%.o,$(FILES))
+OBJ = ${FILES:.c=.o}
 
-OBJ_B = $(patsubst %.c,%.o,$(FILES_B))
+OBJ_B = ${FILES_B:.c=.o}
 
 all : $(NAME)
 
